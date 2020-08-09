@@ -8,7 +8,7 @@ from states import Form
 
 @dp.message_handler(Command('form'))
 async def form_query(message: types.Message, ):
-    await message.answer("Форма запуущена!\n"
+    await message.answer("Форма запущена!\n"
                          "Вопрос №1\n\n"
                          "Введите Ваше имя:")
     await Form.Q1_name.set()
