@@ -1,4 +1,5 @@
 from .help import dp
+from .items import dp
 from .start import dp
 from .form import dp
 from .echo import dp
