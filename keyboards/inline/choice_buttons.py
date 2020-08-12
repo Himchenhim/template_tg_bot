@@ -10,7 +10,7 @@ mandarin_keyboard = InlineKeyboardMarkup(row_width=2,
                                                      text="Купить товар",
                                                      callback_data=buy_callback.new(
                                                          item_id=mandarin.get_item_id(),
-                                                         IsBought=True,
+                                                         IsBought="True",
                                                          IsPlus=False,
                                                          IsMinus=False,
                                                          IsShared=False
@@ -22,7 +22,7 @@ mandarin_keyboard = InlineKeyboardMarkup(row_width=2,
                                                      text="👍",
                                                      callback_data=buy_callback.new(
                                                          item_id=mandarin.get_item_id(),
-                                                         IsPlus=True,
+                                                         IsPlus="True",
                                                          IsMinus=False,
                                                          IsShared=False,
                                                          IsBought=False
@@ -33,7 +33,7 @@ mandarin_keyboard = InlineKeyboardMarkup(row_width=2,
                                                      callback_data=buy_callback.new(
                                                          item_id=mandarin.get_item_id(),
                                                          IsPlus=False,
-                                                         IsMinus=False,
+                                                         IsMinus="True",
                                                          IsShared=False,
                                                          IsBought=False
                                                      )
