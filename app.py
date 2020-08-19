@@ -1,3 +1,7 @@
+from loader import db
+from utils.set_bot_commands import set_default_commands
+
+
 async def on_startup(dp):
     import filters
     import middlewares
@@ -6,6 +10,9 @@ async def on_startup(dp):
 
     from utils.notify_admins import on_startup_notify
     await on_startup_notify(dp)
+    await db.create_table_users()
+    await db.delete_users()
+    await  set_default_commands(dp)
 
 
 if __name__ == '__main__':

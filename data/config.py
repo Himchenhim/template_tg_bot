@@ -12,6 +12,9 @@ admins = [
 
 ip = os.getenv("ip")
 
+PGUSER = os.getenv("PGUSER")
+PGPASSWORD = os.getenv("PGPASSWORD")
+
 aiogram_redis = {
     'host': ip,
 }
