@@ -1,11 +1,12 @@
 from typing import List
 
-from aiogram import Dispatcher
 from gino import Gino
-import sqlalchemy 
+import sqlalchemy
+from gino.schema import GinoSchemaVisitor
 from sqlalchemy import Column, DateTime
 
 from data import config
+from data.config import POSTGRES_URI
 
 db = Gino()
 

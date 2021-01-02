@@ -28,4 +28,3 @@ DATABASE = str(os.getenv("DATABASE"))
 
 # Ссылка подключения к базе данных
 POSTGRES_URI = f"postgresql://{PGUSER}:{PGPASSWORD}@{ip}/{DATABASE}"
-    
